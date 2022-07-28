@@ -10,13 +10,15 @@ const getNameUsers = () =>  {
   return users;  
 }
 
-
-export const FirstApp = () => {
+// Desestructuando los Props {title, subtitle, age}
+export const FirstApp = ({title, subtitle, age}) => { 
  
   return (
     <>
-    <h1> {`${getNameUsers().name} ${getNameUsers().age} Años `}</h1>
-    <h3>Developer Software</h3>
+    <h1> {title} </h1>
+    <h2> {`${getNameUsers().name} ${age} Años `}</h2>
+    <h3> { subtitle } </h3>
     </>
   )
+  
 }
