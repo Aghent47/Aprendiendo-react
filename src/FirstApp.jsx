@@ -1,5 +1,6 @@
 
 // import React, { Fragment } from 'react' = <> 
+import PropTypes from 'prop-types';
 
 const getNameUsers = () =>  {
   const users = {
@@ -20,5 +21,13 @@ export const FirstApp = ({title, subtitle, age}) => {
     <h3> { subtitle } </h3>
     </>
   )
+  
+}
+
+//PropTypes
+
+FirstApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
   
 }
