@@ -24,10 +24,10 @@ export const FirstApp = ({title, subtitle, age}) => {
   
 }
 
-//PropTypes
+// PropTypes
 
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  
+  age: PropTypes.number.isRequired,
 }
