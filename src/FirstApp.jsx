@@ -12,11 +12,10 @@ const getNameUsers = () =>  {
 
 
 export const FirstApp = () => {
-
+ 
   return (
     <>
-    <h1> {`Nombre: ${getNameUsers().name}
-           Edad: ${getNameUsers().age} Años `}</h1>
+    <h1> {`${getNameUsers().name} ${getNameUsers().age} Años `}</h1>
     <h3>Developer Software</h3>
     </>
   )
